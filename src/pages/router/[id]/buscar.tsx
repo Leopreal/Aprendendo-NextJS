@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-const buscar = () => {
+const Buscar = () => {
   const router = useRouter();
   const numid = router.query.id;
 
@@ -19,4 +19,4 @@ const buscar = () => {
   );
 };
 
-export default buscar;
+export default Buscar;

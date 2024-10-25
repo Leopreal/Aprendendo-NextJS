@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 
-
-const nome = () => {
+const Nome = () => {
   const router = useRouter();
   const numId = router.query.id;
   const nomeCode = router.query.nome;
@@ -14,4 +13,4 @@ const nome = () => {
   );
 };
 
-export default nome;
+export default Nome;

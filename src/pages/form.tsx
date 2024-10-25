@@ -5,7 +5,7 @@ interface Usuario {
   idade: string;
 }
 
-const form = () => {
+const Form = () => {
   const [nome, setNome] = useState<string>("");
   const [idade, setIdade] = useState<number>(0);
   const [usuarios, setUsuarios] = useState<Usuario[]>([]);
@@ -50,4 +50,4 @@ const form = () => {
   );
 };
 
-export default form;
+export default Form;

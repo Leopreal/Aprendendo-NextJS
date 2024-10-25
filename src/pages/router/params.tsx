@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import Link from "next/link";
 
-const params = () => {
+const Params = () => {
   const router = useRouter();
   const nome = router.query.nome;
   const id = router.query.id;
@@ -18,4 +18,4 @@ const params = () => {
   );
 };
 
-export default params;
+export default Params;

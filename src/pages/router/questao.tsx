@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 
-interface Questao {
+interface Questoes {
   id: string;
   enunciado: string;
   respostas: string[];
 }
 
-const questao = () => {
-  const [questao, setQuestao] = useState<Questao | null>(null);
+const Questao = () => {
+  const [questao, setQuestao] = useState<Questoes | null>(null);
 
   useEffect(() => {
     fetch("http://localhost:3000/api/questao/123")
@@ -39,4 +39,4 @@ const questao = () => {
   );
 };
 
-export default questao;
+export default Questao;
