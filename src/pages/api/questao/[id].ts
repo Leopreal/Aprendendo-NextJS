@@ -1,7 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from "next";
 
-
-
 export default function questao(req: NextApiRequest, res: NextApiResponse) {
   if (req.method === "GET") {
     const id = req.query.id;
@@ -11,6 +9,6 @@ export default function questao(req: NextApiRequest, res: NextApiResponse) {
       respostas: ["branca", "preta", "vermelha"],
     });
   } else {
-    res.status(405).send;
+    res.status(405).send("nao permitido");
   }
 }

@@ -16,5 +16,5 @@ export default function form(req: NextApiRequest, res: NextApiResponse) {
 function post(req: NextApiRequest, res: NextApiResponse) {
   const usuario = JSON.parse(req.body);
   usuarios.push(usuario);
-  res.status(200).send;
+  res.status(200).json({ message: "adicionado" });
 }
